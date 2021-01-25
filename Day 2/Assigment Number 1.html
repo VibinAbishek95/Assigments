@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Welcome
+        </title>
+    </head>
+    <body>
+        <h1>My Javascript Program</h1>
+
+
+        <script>
+            // console.log(1 + "2" + "2"). Result will be 122 because as + acts as a concatenation operator.
+            console.log(1 + "2" + "2");
+
+            // console.log(1 + +"2" + "2" ). Result will be 32 because + or - operand in front of a string converts it in to number variable. 
+            // so here +"2" will become 2 hence the result will be 32.
+            console.log(1 + +"2" + "2");
+
+            // console.log(1 + -"1" + "2"). The result is 02 because + or - operand in front of a string converts it in to number variable. 
+            // so here -"1" will become -1 hence the result will be 02.
+            console.log(1 + -"1" + "2");
+
+            // console.log(+"1" + "1" + "2") results in 112 because + acts as a concatenation operator.
+            // First "1" is converted into numeric type and concatenat with "1" and "2"
+            console.log(+"1" + "1" + "2");
+
+            // console.log("A" - "B" + "2") the - operator can not be applied to strings, 
+            // and since neither "A" nor "B" can be converted to numeric values, 
+            // "A" - "B" yields NaN which is then concatenated with the string "2" to yield “NaN2”.
+            console.log( "A" - "B" + "2");
+
+            // console.log("A" - "B" + 2) like the previous one, "A" - "B" yields NaN. 
+            // But any operator applied to NaN with any other numeric operand will still yield NaN.
+            console.log( "A" - "B" + 2);
+        </script>
+    </body>
+</html>
